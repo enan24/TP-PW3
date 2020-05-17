@@ -19,11 +19,7 @@ namespace TP_PW3.Controllers
             return View();
         }
 
-        public ActionResult Registrarse() 
-        {
-
-            return View();
-        }
+    
         public ActionResult CrearNecesidad()
         {
 
