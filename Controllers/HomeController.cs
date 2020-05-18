@@ -12,5 +12,18 @@ namespace TP_PW3.Controllers
         {
             return View();
         }
+
+
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+    
+        public ActionResult CrearNecesidad()
+        {
+
+            return View();
+        }
     }
 }
