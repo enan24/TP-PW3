@@ -18,10 +18,16 @@
         @Html.ValidationMessageFor(o => o.Password)
     </div>
     <div class="form-group">
-        <label for="pwd">Confirmar Contraseña:</label>
+        <label for="repwd">Confirmar Contraseña:</label>
         <input type="password" class="form-control" id="repassword" placeholder="Reingrese Contraseña" name="repassword" required>
         @Html.ValidationMessageFor(o => o.RePassword)
 
     </div>
-    <button type="submit" class="btn btn-primary">Registrarse</button>
+    <div class="form-group">43
+        <label for="fechaNacimiento">Ingrese su edad:</label>
+        @Html.EditorFor(o => o.Edad)
+        @Html.ValidationMessageFor(o => o.Edad)
+
+    </div>
+    <button type="submit" class="btn btn-success">Registrarse</button>
 </form>
