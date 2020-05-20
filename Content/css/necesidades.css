@@ -1,0 +1,48 @@
+﻿.jumbotron {
+    background-image: url("../img/banner1.jpg");
+    height: 460px;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .jumbotron .container-fluid {
+        background-color: rgba(55, 85, 190, .9) !important;
+        height: 460px;
+    }
+
+
+.formulario{
+    background-color: rgba(255,255,255,0.9);
+}
+
+.mis-necesidades .card {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+@media(min-width:35em){
+    .mis-necesidades .card {
+        width: 45%;
+        margin-left:10px;
+        margin-right:10px;
+    }
+}
+
+@media(min-width:60em) {
+    .mis-necesidades .card {
+        width: 30%;
+    }
+
+    .mis-necesidades .container{
+        margin-top: -30px;
+    }
+}
+
+
+@media(min-width:70em) {
+    .mis-necesidades .card {
+        width: 23%;
+    }
+}
