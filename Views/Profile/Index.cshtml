@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Perfil";
+}
+
+<link href="~/Content/styles-profile.css" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/profile.js"></script>
+
+<div class="container">
+    <div class="container-profile">
+        <div class="image-profile">
+            <img src="img/profile.jpg" alt="img-profile" />
+        </div>
+        <div class="userdata-container">
+            <h4>cosme.fulanito</h4>
+            <h5>cosmefulanitodetal@gmail.com</h5>
+        </div>
+        <div class="data-container">
+            <label class="firstname">
+                <span>Nombre</span>
+                <p id="firstname">Cosme</p>
+                <input type="text" name="firstname" id="firstname-edit" value="Cosme">
+            </label>
+            <label class="lastname">
+                <span>Apellido</span>
+                <p id="lastname">Fulanito</p>
+                <input type="text" name="lastname" id="lastname-edit" value="Fulanito">
+            </label>
+            <label class="birth-date">
+                <span>Fecha Nacimiento</span>
+                <p id="birth-date">15 de Mayo de 1993</p>
+                <input type="date" name="birth-date" id="birth-date-edit" value="1993-05-15">
+            </label>
+            <label class="edit-container">
+                <button type="button" id="button-edit">
+                    <img src="img/edit.png" />
+                </button>
+                <button type="button" class="button-cancel" id="button-cancel">Cancelar</button>
+            </label>
+            <label class="date-register" id="data-register">
+                <span>Fecha registro</span>
+                <p>10 de Mayo del 2020</p>
+            </label>
+            <label class="confirm-container" id="confirm-container">
+                <button type="button" id="button-confirm">Confirmar</button>
+            </label>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/profile.js"></script>
+
