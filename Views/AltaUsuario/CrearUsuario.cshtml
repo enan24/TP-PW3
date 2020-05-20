@@ -3,31 +3,36 @@
     ViewBag.Title = "CrearUsuario";
 }
 
-<h2>Registrarse</h2>
+<h2 class="text-center mt-5">Registrarse</h2>
 
-<form action="CrearUsuario" method="post">
-    <div class="form-group">
-        <label class="mr-sm-2" for="email">Email : </label>
-        <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Ingrese email" id="email" name="email">
-        @Html.ValidationMessageFor(o => o.Email)
+<div class="container mt-5 mb-5 pb-5">
+    <div class="row justify-content-center">
+        <form action="CrearUsuario" method="post">
+            <div class="form-group">
+                <label class="mr-sm-2" for="email">Email : </label>
+                <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Ingrese email" id="email" name="email">
+                @Html.ValidationMessageFor(o => o.Email)
 
-    </div>
-    <div class="form-group">
-        <label for="pwd">Contraseña:</label>
-        <input type="password" class="form-control" id="password" placeholder="Ingrese Contraseña" name="password" required>
-        @Html.ValidationMessageFor(o => o.Password)
-    </div>
-    <div class="form-group">
-        <label for="repwd">Confirmar Contraseña:</label>
-        <input type="password" class="form-control" id="repassword" placeholder="Reingrese Contraseña" name="repassword" required>
-        @Html.ValidationMessageFor(o => o.RePassword)
+            </div>
+            <div class="form-group">
+                <label for="pwd">Contraseña:</label>
+                <input type="password" class="form-control" id="password" placeholder="Ingrese Contraseña" name="password" required>
+                @Html.ValidationMessageFor(o => o.Password)
+            </div>
+            <div class="form-group">
+                <label for="repwd">Confirmar Contraseña:</label>
+                <input type="password" class="form-control" id="repassword" placeholder="Reingrese Contraseña" name="repassword" required>
+                @Html.ValidationMessageFor(o => o.RePassword)
 
-    </div>
-    <div class="form-group">
-        <label for="fechaNacimiento">Ingrese su edad:</label>
-        @Html.EditorFor(o => o.Edad)
-        @Html.ValidationMessageFor(o => o.Edad)
+            </div>
+            <div class="form-group">
+                <label for="fechaNacimiento">Ingrese su edad:</label>
+                @Html.EditorFor(o => o.Edad)
+                @Html.ValidationMessageFor(o => o.Edad)
 
+            </div>
+            <button type="submit" class="btn btn-success">Registrarse</button>
+        </form>
     </div>
-    <button type="submit" class="btn btn-success">Registrarse</button>
-</form>
+</div>
+
