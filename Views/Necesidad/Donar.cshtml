@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewBag.Title = "Donar";
+}
+
+<h2 class="text-center mt-5">Donar a Nombre Necesidad</h2>
+<br><br>
+<div class="container">
+    <div class="row">
+        
+        <div class="col">
+            <div class="col-md-12 order-md-1">
+                <h4 class="mb-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dinero</font></font></h4>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="custom-control custom-radio">
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                            <label class="custom-control-label" for="credit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tarjeta de crédito</font></font></label>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="custom-control custom-radio">
+                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                            <label class="custom-control-label" for="debit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tarjeta de débito</font></font></label>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="custom-control custom-radio">
+                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                            <label class="custom-control-label" for="paypal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MercadoPago</font></font></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-block my-3">
+                   
+                   
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre en la tarjeta</font></font></label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                        <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre completo como se muestra en la tarjeta</font></font></small>
+                        <div class="invalid-feedback">
+                            Nombre de la tarjeta requerido
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Número de tarjeta de crédito</font></font></label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            numero de la tarjeta requerido
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-expiration"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vencimiento</font></font></label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            fecha de venciminto requerida
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-expiration"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CVV</font></font></label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            CVV requerido
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-lg btn-block" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pagar</font></font></button>
+                    </div>
+            </div>
+            
+
+            <div class="col">
+                <div class="col-md-12 order-md-1">
+                    <h4 class="mb-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Bienes</font></font></h4>
+                    <form class="needs-validation" novalidate="">
+                        <div class="row">
+                            <div class="col">
+                              <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="1">
+                                    <label class="custom-control-label" for="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ropa</font></font></label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="2">
+                                    <label class="custom-control-label" for="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alimentos</font></font></label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="3">
+                                    <label class="custom-control-label" for="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Muebles</font></font></label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="4">
+                                    <label class="custom-control-label" for="4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">articulos de higiene</font></font></label>
+                                </div>
+                            </div>
+                            </div>  
+                           
+                            
+                            <br />
+                            <div class=" mb-3">
+                                <label for="cc-number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Número de Telefono</font></font></label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="address"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Retirar en:</font></font></label>
+                                <input type="text" class="form-control" id="address" placeholder="Direccion de retiro" required="">
+                                <div class="invalid-feedback">
+                                    Direccion requerida
+                                </div>
+                            </div>
+
+
+
+                            <button class="btn btn-primary btn-lg btn-block" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Enviar</font></font></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+</div>       
