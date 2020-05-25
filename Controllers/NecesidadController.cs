@@ -9,7 +9,7 @@ namespace TP_PW3.Controllers
     public class NecesidadController : Controller
     {
         // GET: Necesidad
-        public ActionResult MisNecesidades()
+        public ActionResult Home()
         {
             return View();
         }
