@@ -8,7 +8,7 @@ namespace TP_PW3.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Inicio()
         {
             return View();
         }
