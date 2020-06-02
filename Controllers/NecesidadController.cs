@@ -23,6 +23,9 @@ namespace TP_PW3.Controllers
             return View();
         }
 
-
+        public ActionResult Necesidad()
+        {
+            return View();
+        }
     }
 }

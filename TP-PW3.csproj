@@ -244,6 +244,7 @@
     <Content Include="Views\Necesidad\MisNecesidades.cshtml" />
     <Content Include="Views\Necesidad\Donar.cshtml" />
     <Content Include="Views\Necesidad\ListaDonaciones.cshtml" />
+    <Content Include="Views\Necesidad\Necesidad.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
